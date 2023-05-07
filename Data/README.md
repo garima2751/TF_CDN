@@ -8,3 +8,11 @@ This directory includes all the conflict and duplicate paired datasets with the 
 | OPENCOSS      | 6,776             | -                  | 10               | open_coss_clean_pairs.csv         |
 | CN            | 5,553             | -                  | 3,400            | -           | 
 
+For CN dataset, implement following code to convert CDN dataset to CN dataset:
+```python
+# Load the dataset
+df = pd.read_csv('/Data/ConfDubNo2.csv')
+df = df[df.Class != "Duplicate"]
+df.reset_index(drop=True, inplace=True)
+df['Class'] = df['Class'].replace(['Conflict', 'Neural'], [1, 0])
+df.Class.value_counts()
