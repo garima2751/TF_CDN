@@ -16,6 +16,7 @@ df = df[df.Class != "Duplicate"]
 df.reset_index(drop=True, inplace=True)
 df['Class'] = df['Class'].replace(['Conflict', 'Neutral'], [1, 0])
 df.Class.value_counts()
+```
 
 For rest of the datasets, implement following code:
 ```python
@@ -23,3 +24,4 @@ For rest of the datasets, implement following code:
 df = pd.read_csv('/Data/uav_clean_pairs.csv')
 df['Class'] = df['Class'].replace(['Conflict', 'Neutral'], [1, 0])
 df.Class.value_counts()
+```
