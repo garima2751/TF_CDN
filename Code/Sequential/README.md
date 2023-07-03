@@ -13,7 +13,7 @@ This file can be run using following code:
 * data_name choices ['pure','open','wv','cdn','cn','uav']
 * csv_path - path to the dataset.
 * tokenizer_path and model_path - MNLI dataset trained checkpoints (roberta-large-mnli, deberta-base-mnli, bert-base-uncased-MNLI) 
-<font color='red'> Note: It is recommended that tokenizer_path and model_path should be taken from huggingface library. </font>
+**Note: It is recommended that tokenizer_path and model_path should be taken from huggingface library.** 
 * num_labels should be 3 in case of CDN dataset otherwise its 2 for other datasets
 
 To run this code and sample output structure is provided in `example_notebooks' folder. 
