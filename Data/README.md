@@ -14,5 +14,12 @@ For CN dataset, implement following code to convert CDN dataset to CN dataset:
 df = pd.read_csv('/Data/ConfDubNo2.csv')
 df = df[df.Class != "Duplicate"]
 df.reset_index(drop=True, inplace=True)
-df['Class'] = df['Class'].replace(['Conflict', 'Neural'], [1, 0])
+df['Class'] = df['Class'].replace(['Conflict', 'Neutral'], [1, 0])
+df.Class.value_counts()
+
+For rest of the datasets, implement following code:
+```python
+# Load the dataset
+df = pd.read_csv('/Data/uav_clean_pairs.csv')
+df['Class'] = df['Class'].replace(['Conflict', 'Neutral'], [1, 0])
 df.Class.value_counts()
