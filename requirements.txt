@@ -1,0 +1,7 @@
+pandas
+configargparse
+scikit-learn
+numpy
+transformers
+jsonpickle
+sentencepiece
