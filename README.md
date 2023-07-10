@@ -14,4 +14,7 @@
 You can upload the notebook at `Examples/example_notebook.ipynb` and follow the instructions there to get started with training and evaluation of the proposed techniques. Make sure to replicate the paper results please follow the indepth description of each component in this `README.md` file. 
 #### Getting Started
 ---
-
+Add this githib project home folder to your `PYTHONPATH`:
+```
+export PYTHONPATH=/PATH/TO/project:$PYTHONPATH
+```
