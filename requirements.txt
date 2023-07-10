@@ -7,4 +7,3 @@ seqeval
 sentence_transformers
 tensorrt
 tensorflow==2.8
-
