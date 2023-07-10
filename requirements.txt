@@ -1,7 +1,10 @@
-pandas
-configargparse
-scikit-learn
-numpy
+transformers datasets
 transformers
-jsonpickle
-sentencepiece
+allennlp-models
+allenlp
+transformers accelerate
+seqeval
+sentence_transformers
+tensorrt
+tensorflow==2.8
+
