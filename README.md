@@ -14,7 +14,32 @@
 You can upload the notebook at `Examples/example_notebook.ipynb` and follow the instructions there to get started with training and evaluation of the proposed techniques. Make sure to replicate the paper results please follow the indepth description of each component in this `README.md` file. 
 #### Getting Started
 ---
-Add this githib project home folder to your `PYTHONPATH`:
+Clone this Github repository and open your command line to navigate the repository and code.
 ```
-export PYTHONPATH=/PATH/TO/project:$PYTHONPATH
+$ cd TF_CDN
+$ TF_CDN/ cd Code
+$ TF_CDN/Code/  .....
 ```
+To download the all the necessary libraries please run the following commands
+```
+$pip install -r requirements.txt
+```
+**Note that these codes by deafult will run on CPU and it's recommended that you should use GPU services for faster execution times. Please follow the colab examples to get started.**
+#### Running the Code
+---
+You can type 
+```python Sequential/sequential_main.py --help``` to understand the arguments structure for the code files. You can do that for the files listed below to understand the type and name of each argument required to run the files.
+The `Code` folder is organised into four main components as follows:
+* `Code/Sequential/sequential_main.py`: code to train and fine-tune transformer model for requirement pair datasets. To run the file please follow the command indicated in `Code/Sequential/README.md` location.
+
+* `Code/SR-BERT/sr_bert_main.py`: training code for SR_BERT model. To run the code in the file, please follow the instructions given in `Code/SR-BERT/README.md`.
+
+* `Code/Cross-Domain/cross_domain_main.py`: Train models for cross-data experiments. Please follow the command indicated in `Code/Cross-Domain/README.md`.
+  
+* `Code/Rule-based/rule_based_aa_ner_main.py`: Execute the software-specific actor and action extraction from requirements for reclassification of false postives obtained in cross dataset experiments. To run the code, follow the instructions given in `Code/Rule-based/README.md`.
+  
+* `Code/Rule-base/rule_based_srl_pos_main.py`: Execute semantic role labeling (SRL) and part-of-speech (POS) tagging for cross dataset experiments. To run the code, follow the instructions given in `Code/Rule-based/README.md`.
+
+#### Paper Results
+---
+To obtain the results reported in the paper, please train the models for longer durations and follow the individual instructions provided in each code component to replicate the paper results.
