@@ -3,10 +3,10 @@
 The following code provides the details on how to train the SR_BERT model:
 ```python
 ! python  /content/sr_bert_main.py  --data_name 'cdn'
-                                    --csv_path  /content/ConfDubNo2.csv
+                                    --csv_path  /Data/cdn_pairs.csv
                                     --sbert_model_path 'distilbert-base-nli-mean-tokens'
                                     --num_labels 3
-                                    --output_path /content/final_results.csv
+                                    --output_path /Output/final_results.csv
 ```
 * Here, the file paths is according to Google colab working, if you are running the code in your own local directory , you need to specify the local directory path where the respectives files are present.
 * data_name choices ('uav', 'open' , 'wv', 'cdn', 'cn', 'pure')
@@ -17,5 +17,5 @@ The following code provides the details on how to train the SR_BERT model:
 ### For Paper Results:
 * To replicate the results in the paper from SR-BERT paper, please train SBERT checkpoint (`distilbert-base-nli-mean-tokens') for 5 epochs and perform 5 fold cross validation.
 * Changes to epoch value and fold value can be easily done on sr_bert_main.py file
-* Also, the sample code output and running commands has been provided in the `example_notebooks' folder.
+* Also, the sample code output and running commands has been provided in the `Examples' folder.
 
