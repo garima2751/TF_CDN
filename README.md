@@ -1,4 +1,5 @@
 #### TF_CDN: Tranfer learning for conflict, duplicate, and neutral requirement pairs
+[![DOI](https://zenodo.org/badge/637262324.svg)](https://zenodo.org/doi/10.5281/zenodo.10830022)
 ---
 * This is a repository for the paper **''Transfer learning for conflict and duplicate detection in software requirement pairs''**
 * A draft of the paper can be found on Arxiv: [Paper link](https://arxiv.org/pdf/2301.03709.pdf).
